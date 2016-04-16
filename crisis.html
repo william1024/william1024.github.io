@@ -23,7 +23,10 @@
       var fdb = new ForerunnerDB();
       var db = fdb.db("myDB");
       var studentCollection = db.collection('students');
-      studentCollection.lood();
+      studentCollection.lood(function(){
+        var students = studentCollection.find();
+        console(students);
+      });
     </script>
   </body>
 </html>
