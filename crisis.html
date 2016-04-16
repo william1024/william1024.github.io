@@ -23,7 +23,7 @@
       var fdb = new ForerunnerDB();
       var db = fdb.db("myDB");
       var studentCollection = db.collection('students');
-      studentCollection.lood(function(){
+      studentCollection.load(function(){
         var students = studentCollection.find();
         console(students);
       });
