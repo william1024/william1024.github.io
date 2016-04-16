@@ -1,13 +1,27 @@
 <html>
   <head>
-  <title>happy william</title>
+    <title>happy william</title>
   </head>
-    <body>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>id</td>
+          <td>姓名</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Orange</td>
+        </tr>
+      </tbody>
+    </table>
     <script type="text/javascript" src="js/fdb-all.min.js#L2"></script>
     <script>
-    var fdb = new ForerunnerDB();
-    var db = fdb.db("myDB");
-    var studentCollection = db.collection('students');
-</script>
-    </body>
+      var fdb = new ForerunnerDB();
+      var db = fdb.db("myDB");
+      var studentCollection = db.collection('students');
+    </script>
+  </body>
 </html>
